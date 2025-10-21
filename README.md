@@ -79,5 +79,6 @@ Contraste de cores que facilita a leitura e destaca elementos importantes.
 Link Figma:
 
 https://www.figma.com/community/file/1562506477756765440
+.
 
 
