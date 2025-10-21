@@ -1,0 +1,328 @@
+/* css/styles.css */
+
+/* IMAGEM ÚNICA COBRINDO TODO O SITE */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../img/classic.avif') center/cover fixed;
+  color: white;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* CONTAINER PARA CONTEÚDO */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* HEADER TRANSPARENTE */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4d00;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  color: #ff4d00;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.botao-carrinho {
+  background-color: #ff4d00;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-carrinho:hover {
+  background-color: #e04400;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SEÇÕES SEM DIVISÕES - TRANSPARENTES */
+.cardapio, .sobre, .contato {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.cardapio h2, .sobre h2, .contato h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  font-weight: 700;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CARDÁPIO - CARDS TRANSPARENTES */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.preco {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4d00;
+  margin: 1.5rem 0;
+}
+
+/* BOTÕES */
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #ff4d00;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 77, 0, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #e04400;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 77, 0, 0.4);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #ff4d00;
+  border: 2px solid #ff4d00;
+}
+
+.btn-secondary:hover {
+  background-color: #ff4d00;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* SOBRE E CONTATO */
+.sobre p, .contato p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 3rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .cardapio, .sobre, .contato {
+    padding: 4rem 0;
+  }
+  
+  .cardapio h2, .sobre h2, .contato h2 {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .cardapio h2, .sobre h2, .contato h2 {
+    font-size: 2rem;
+  }
+  
+  .subtitulo, .sobre p, .contato p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animações suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+.cardapio, .sobre, .contato {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
