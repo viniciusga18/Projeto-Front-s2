@@ -74,6 +74,14 @@ Contraste de cores que facilita a leitura e destaca elementos importantes.
 
 
 
+Sobre o Java no meu trabalho:
+Descobri que o JavaScript é como dar vida à minha página.Ele transformou meu site, o botão muda cores quando clicamos, o nome do cliente aparece magicamente enquanto digita, e as imagens dos hambúrgueres ganham destaque quando passamos o mouse. A parte mais divertida foi criar os efeitos nas fotos dos produtos - ver cada hambúrguer "acender". Aprendi que a DOM é como o esqueleto vivo da página, onde cada elemento pode ser acessado e transformado, criando uma conversa real entre o site e quem está navegando.Percebi a importancia do java no site e sem ele não ficaria fluido e moderno.
+
+
+
+
+
+
 
 
 Link Figma:
