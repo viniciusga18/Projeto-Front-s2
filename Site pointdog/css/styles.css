@@ -1,6 +1,3 @@
-/* css/styles.css */
-
-/* IMAGEM ÚNICA COBRINDO TODO O SITE */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -13,14 +10,12 @@ body {
   line-height: 1.6;
 }
 
-/* CONTAINER PARA CONTEÚDO */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* HEADER TRANSPARENTE */
 header {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
@@ -80,7 +75,6 @@ header {
   background-color: #e04400;
 }
 
-/* HERO SECTION */
 .hero {
   height: 100vh;
   display: flex;
@@ -106,7 +100,6 @@ header {
   margin-right: auto;
 }
 
-/* SEÇÕES SEM DIVISÕES - TRANSPARENTES */
 .cardapio, .sobre, .contato {
   padding: 6rem 0;
   text-align: center;
@@ -128,7 +121,6 @@ header {
   margin-right: auto;
 }
 
-/* CARDÁPIO - CARDS TRANSPARENTES */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -180,7 +172,6 @@ header {
   margin: 1.5rem 0;
 }
 
-/* BOTÕES */
 .btn {
   padding: 1rem 2rem;
   border: none;
@@ -217,7 +208,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* SOBRE E CONTATO */
 .sobre p, .contato p {
   font-size: 1.2rem;
   opacity: 0.9;
@@ -226,7 +216,6 @@ header {
   line-height: 1.7;
 }
 
-/* FOOTER */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 3rem 0;
@@ -240,7 +229,6 @@ footer p {
   text-align: center;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -307,7 +295,6 @@ footer p {
   }
 }
 
-/* Animações suaves */
 html {
   scroll-behavior: smooth;
 }

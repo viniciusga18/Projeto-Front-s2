@@ -6,6 +6,17 @@
   <title>Point do Dog</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      transition: transform 0.2s ease;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,7 +37,7 @@
         <h1>Point do Dog</h1>
         <p>Os melhores hambúrgueres artesanais da cidade. Ingredientes frescos, sabor inigualável.</p>
         <div class="hero-buttons">
-          <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+          <a href="#cardapio" id="botaoInfo" class="btn btn-primary">Ver Cardápio</a>
         </div>
       </div>
     </section>
@@ -35,22 +46,23 @@
       <h2>Nosso Cardápio</h2>
       <p>Hambúrgueres e cachorros-quentes artesanais preparados com muito amor.</p>
       <div class="card-grid">
+        <!-- Desafio 3: Imagem com efeito hover -->
         <div class="card">
-          <img src="img/shutterstock_1489640750-1.webp" alt="Classic Burger">
+          <img id="fotoClassic" src="img/shutterstock_1489640750-1.webp" alt="Classic Burger">
           <h3>Classic Burger</h3>
           <p>Hambúrguer 160g, queijo cheddar, alface, tomate e molho especial.</p>
           <span class="preco">R$ 24,90</span>
           <button class="btn btn-secondary">Pedir Agora</button>
         </div>
         <div class="card">
-          <img src="img/bacon.webp" alt="Bacon Supreme">
+          <img id="fotoBacon" src="img/bacon.webp" alt="Bacon Supreme">
           <h3>Bacon Supreme</h3>
           <p>Hambúrguer 200g, bacon crocante, queijo e cebola caramelizada.</p>
           <span class="preco">R$ 34,90</span>
           <button class="btn btn-secondary">Pedir Agora</button>
         </div>
         <div class="card">
-          <img src="img/hotdog.png" alt="Hot Dog Completo">
+          <img id="fotoHotDog" src="img/hotdog.png" alt="Hot Dog Completo">
           <h3>Hot Dog Completo</h3>
           <p>Salsicha artesanal, purê, batata palha e molho especial.</p>
           <span class="preco">R$ 22,90</span>
@@ -72,13 +84,98 @@
       <p>Faça seu pedido pelo WhatsApp ou venha nos visitar!</p>
       <a href="https://wa.me/5599999999999" class="btn btn-primary">Falar no WhatsApp</a>
     </section>
+
+    <section id="saudacao" class="saudacao">
+      <h2>Deixe seu nome</h2>
+      <input id="nomeUsuario" placeholder="Digite seu nome" />
+      <p id="mensagem"></p>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Point do Dog - Todos os direitos reservados.</p>
-    <P>📍 Boulevard sul , entre 17 e 18 sul - Águas Claras, Brasília - DF, 72000-000</P>
-    <p>✉️contatopointdog@gmail.com</p>
-    <P>📱Siga a gente nas redes!</P>
+    <p>📍 Boulevard sul, entre 17 e 18 sul - Águas Claras, Brasília - DF, 72000-000</p>
+    <p>✉️ contatopointdog@gmail.com</p>
+    <p>📱 Siga a gente nas redes!</p>
   </footer>
+
+  <script>
+    const botao = document.querySelector("#botaoInfo");
+    const titulo = document.querySelector("h1");
+
+    botao.onclick = function() {
+      titulo.innerHTML = "Você clicou no botão!";
+      titulo.style.color = "blue";
+      document.body.style.backgroundColor = "lightyellow";
+    };
+
+    const nomeInput = document.querySelector("#nomeUsuario");
+    const mensagem = document.querySelector("#mensagem");
+
+    nomeInput.addEventListener("input", function() {
+      const nome = nomeInput.value.trim();
+      if (nome) {
+        mensagem.textContent = `Bem-vindo(a), ${nome}! 🍔`;
+      } else {
+        mensagem.textContent = "";
+      }
+    });
+
+    const fotoClassic = document.querySelector("#fotoClassic");
+    const fotoBacon = document.querySelector("#fotoBacon");
+    const fotoHotDog = document.querySelector("#fotoHotDog");
+
+    fotoClassic.onmouseover = function() {
+      fotoClassic.style.opacity = "0.8";
+      fotoClassic.style.transform = "scale(1.1)";
+      fotoClassic.style.transition = "all 0.3s ease";
+      fotoClassic.style.border = "3px solid #FF6B35";
+    }
+
+    fotoClassic.onmouseout = function() {
+      fotoClassic.style.opacity = "1";
+      fotoClassic.style.transform = "scale(1)";
+      fotoClassic.style.border = "none";
+    }
+
+    fotoBacon.onmouseover = function() {
+      fotoBacon.style.opacity = "0.8";
+      fotoBacon.style.transform = "scale(1.1)";
+      fotoBacon.style.transition = "all 0.3s ease";
+      fotoBacon.style.border = "3px solid #FF6B35";
+    }
+
+    fotoBacon.onmouseout = function() {
+      fotoBacon.style.opacity = "1";
+      fotoBacon.style.transform = "scale(1)";
+      fotoBacon.style.border = "none";
+    }
+
+    fotoHotDog.onmouseover = function() {
+      fotoHotDog.style.opacity = "0.8";
+      fotoHotDog.style.transform = "scale(1.1)";
+      fotoHotDog.style.transition = "all 0.3s ease";
+      fotoHotDog.style.border = "3px solid #FF6B35";
+    }
+
+    fotoHotDog.onmouseout = function() {
+      fotoHotDog.style.opacity = "1";
+      fotoHotDog.style.transform = "scale(1)";
+      fotoHotDog.style.border = "none";
+    }
+
+    const botoesPedir = document.querySelectorAll('.btn-secondary');
+    botoesPedir.forEach(botao => {
+      botao.onmouseover = function() {
+        botao.style.backgroundColor = "#FF6B35";
+        botao.style.transform = "scale(1.05)";
+      }
+      
+      botao.onmouseout = function() {
+        botao.style.backgroundColor = "";
+        botao.style.transform = "scale(1)";
+      }
+    });
+  </script>
 </body>
 </html>
