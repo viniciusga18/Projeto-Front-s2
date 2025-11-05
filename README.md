@@ -47,15 +47,11 @@ Planejamentos Visuais
 
 Fonte escolhida:
 A fonte usada é uma tipografia simples e moderna (Inter), escolhida pela boa legibilidade em telas e dispositivos móveis.
-Ela transmite um estilo limpo e acessível, adequado ao público jovem e urbano da hamburgueria, além de permitir que o foco visual fique nas imagens dos produtos.
+Ela transmite um estilo limpo e acessível.
 
 
 
-A paleta utiliza tons laranja, branco e preto, inspirada na psicologia das cores:
-O laranja desperta fome, energia e entusiasmo, estimulando o apetite e destacando botões e chamadas de ação.
-O branco traz equilíbrio e contraste, mantendo o visual limpo.
-O preto adiciona sofisticação e foco nas imagens dos hambúrgueres.
-Essas cores reforçam a identidade visual do negócio, transmitindo calor e autenticidade.
+A paleta utiliza tons laranja, branco e preto, inspirada nas cores originais da marca.
 
 
 
@@ -75,9 +71,7 @@ Contraste de cores que facilita a leitura e destaca elementos importantes.
 
 
 Sobre o Java no meu trabalho:
-Descobri que o JavaScript é como dar vida à minha página.Ele transformou meu site, o botão muda cores quando clicamos, o nome do cliente aparece magicamente enquanto digita, e as imagens dos hambúrgueres ganham destaque quando passamos o mouse. A parte mais divertida foi criar os efeitos nas fotos dos produtos - ver cada hambúrguer "acender". Aprendi que a DOM é como o esqueleto vivo da página, onde cada elemento pode ser acessado e transformado, criando uma conversa real entre o site e quem está navegando.Percebi a importancia do java no site e sem ele não ficaria fluido e moderno.
-
-
+No meu trabalho, descobri que o JavaScript e uma parte essencial do site. Ele faz o botão mudar de cor, mostra o nome do cliente enquanto digita e destaca as imagens dos hambúrgueres quando passamos o mouse. Foi importante porque fazendo o site percebi que as interações davam total diferença ao site dando mais modernidade e praticidade. Também entendi que a DOM é a estrutura da página e permite alterar cada elemento. Sem JavaScript, o site não seria tão moderno e interativo.
 
 
 
