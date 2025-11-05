@@ -71,6 +71,7 @@ Contraste de cores que facilita a leitura e destaca elementos importantes.
 
 
 Sobre o Java no meu trabalho:
+
 No meu trabalho, descobri que o JavaScript e uma parte essencial do site. Ele faz o botão mudar de cor, mostra o nome do cliente enquanto digita e destaca as imagens dos hambúrgueres quando passamos o mouse. Foi importante porque fazendo o site percebi que as interações davam total diferença ao site dando mais modernidade e praticidade. Também entendi que a DOM é a estrutura da página e permite alterar cada elemento. Sem JavaScript, o site não seria tão moderno e interativo.
 
 
