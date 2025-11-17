@@ -216,6 +216,39 @@ header {
   line-height: 1.7;
 }
 
+.localizacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+  text-align: center;
+  background: transparent;
+}
+
+.localizacao h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  font-weight: 700;
+  color: white;
+}
+
+.localizacao iframe {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  max-width: 90%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.localizacao iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(255, 77, 0, 0.3);
+  border-color: #ff4d00;
+
+}
+
 footer {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 3rem 0;
@@ -263,6 +296,19 @@ footer p {
     font-size: 2.5rem;
   }
   
+  .localizacao {
+    padding: 4rem 0;
+  }
+  
+  .localizacao h2 {
+    font-size: 2.5rem;
+  }
+  
+  .localizacao iframe {
+    width: 95%;
+    height: 300px;
+  }
+  
   .container {
     padding: 0 1.5rem;
   }
@@ -290,6 +336,14 @@ footer p {
     font-size: 2rem;
   }
   
+  .localizacao h2 {
+    font-size: 2rem;
+  }
+  
+  .localizacao iframe {
+    height: 250px;
+  }
+  
   .subtitulo, .sobre p, .contato p {
     font-size: 1.1rem;
   }
@@ -299,7 +353,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.cardapio, .sobre, .contato {
+.cardapio, .sobre, .contato, .localizacao {
   animation: fadeInUp 0.8s ease-out;
 }
 
