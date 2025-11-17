@@ -108,18 +108,26 @@ Quais elementos HTML se repetem em várias páginas?
 Onde o layout "quebra" ou fica estranho?
 
 -Texto às vezes pouco legível com a imagem de fundo.
+
 -Navbar fixa cobre o topo das seções ao rolar.
+
 -Input da saudação fora do padrão visual.
+
 -Botão “Pedir Agora” não tem ação real.
 
 
 Quais melhorias fariam diferença real para o usuário do pequeno negócio?
 
 -Botão de pedido que abre o WhatsApp com mensagem pronta.
+
 -Página de cardápio completa.
+
 -Melhorar legibilidade e acessibilidade.
+
 -Adicionar avaliações e horário de funcionamento.
+
 -Mapa do local.
+
 -Criar carrinho simples para enviar pedido.
 
 
