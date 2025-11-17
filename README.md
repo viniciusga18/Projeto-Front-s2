@@ -78,6 +78,43 @@ No meu trabalho, descobri que o JavaScript e uma parte essencial do site. Ele fa
 
 
 
+O que já está funcionando bem?
+
+=Layout bonito e moderno
+-Navbar fixa funcionando.
+-Cards e grid bem organizados.
+-Site responsivo e fluido.
+-Animações e hovers funcionam.
+-Interações com JavaScript.
+
+
+Quais elementos HTML se repetem em várias páginas?
+
+-Estrutura dos cards.
+-Títulos <h2> das seções.
+-Parágrafos de descrição.
+-Botões.
+-Navbar e footer.
+
+
+Onde o layout "quebra" ou fica estranho?
+
+-Texto às vezes pouco legível com a imagem de fundo.
+-Navbar fixa cobre o topo das seções ao rolar.
+-Input da saudação fora do padrão visual.
+-Botão “Pedir Agora” não tem ação real.
+
+
+Quais melhorias fariam diferença real para o usuário do pequeno negócio?
+
+-Botão de pedido que abre o WhatsApp com mensagem pronta.
+-Página de cardápio completa.
+-Melhorar legibilidade e acessibilidade.
+-Adicionar avaliações e horário de funcionamento.
+-Mapa do local.
+-Criar carrinho simples para enviar pedido.
+
+
 
 Link Figma:
 
