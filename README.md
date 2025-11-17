@@ -95,9 +95,13 @@ O que já está funcionando bem?
 Quais elementos HTML se repetem em várias páginas?
 
 -Estrutura dos cards.
+
 -Títulos <h2> das seções.
+
 -Parágrafos de descrição.
+
 -Botões.
+
 -Navbar e footer.
 
 
