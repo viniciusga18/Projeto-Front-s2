@@ -132,6 +132,9 @@ Quais melhorias fariam diferença real para o usuário do pequeno negócio?
 
 
 
+Escolhi o metodo de js + componentes porque ele permite modularizar o projeto de forma simples e organizada, evitando repetição no codigo.Além de que achei este metodo mais simples e efetivo.
+
+
 Link Figma:
 
 https://www.figma.com/community/file/1562506477756765440
