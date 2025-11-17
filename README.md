@@ -78,9 +78,13 @@ No meu trabalho, descobri que o JavaScript e uma parte essencial do site. Ele fa
 
 
 
+
+
+
+
 O que já está funcionando bem?
 
-=Layout bonito e moderno
+-Layout bonito e moderno
 -Navbar fixa funcionando.
 -Cards e grid bem organizados.
 -Site responsivo e fluido.
